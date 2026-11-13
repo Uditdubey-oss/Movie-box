@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineSearch - Movie Search Engine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h1>🎬 CineSearch</h1>
+            <button id="homeBtn">Home</button>
+            <button id="favoritesBtn">My Watchlist</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Discover Your Next Favourite Movie</h2>
+            <p>Search thousands of movies and explore their stories.</p>
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search movies..."
+                >
+                <button id="searchBtn">Search</button>
+            </div>
+        </section>
+
+        <section class="movies-section">
+            <h2 id="sectionTitle">Search Results</h2>
+            <p id="message">Search for your favourite movie to get started.</p>
+            <div class="movies-container" id="moviesContainer"></div>
+        </section>
+    </main>
+
+    <div class="modal" id="movieModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeModal">&times;</button>
+            <div id="movieDetails"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 CineSearch | Discover. Explore. Enjoy.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
